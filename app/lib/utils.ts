@@ -8,7 +8,7 @@ export function cn(...inputs: ClassValue[]) {
 export function formatSize(bytes: number): string {
   if (bytes === 0) return '0 Bytes';
 
-  const k = 512;
+  const k = 1024;
   const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
 
   // Determine the appropriate unit by calculating the log
